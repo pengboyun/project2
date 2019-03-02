@@ -5,6 +5,7 @@ from pygame.locals import *
 white = 255,255,255
 black = 0,0,0
 print("Hello 彭博云")
+print("Hello 彭博涵")
 pygame.init()
 
 screen = pygame.display.set_mode((600, 500))
