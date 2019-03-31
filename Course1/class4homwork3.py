@@ -1,16 +1,25 @@
-import easygui
-class Multiplication(object):
+class multiplication(object):
     def __init__(self):
-        self.xxxxxxxxxxxxxx=3
-    def multiplication_table(self):
+        self.take_several_times = 0
+    def pithy_formula(self):
         x = 0
-        for x in range(1, self.xxxxxxxxxxxxxx):
-            y = ''
-            for i in range(1, x + 1):
-                y = y + str(i) + '*' + str(x) + '=' + str(i * x) + "  "
+        for x in range(1,self.take_several_times):
+            y = ' '
+            for i in range(1, x+1):
+                y = y + str(i) + '*' + str(x) + '=' + str(i * x) + '   '
             print(y)
 
-m = Multiplication()
-m.xxxxxxxxxxxxxx = 10
-print(m.xxxxxxxxxxxxxx)
-m.multiplication_table()
+    def addition(self):
+        x = 0
+        for x in range(1,self.take_several_times):
+            y = ''
+            for i in range(1, x+1):
+                y = y + str(i) + '+' + str(x) + '=' + str(i + x) + '   '
+            print(y)
+
+result = multiplication()
+result.take_several_times = 10
+result.pithy_formula()
+result.addition()
+
+
