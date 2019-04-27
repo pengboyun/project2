@@ -17,3 +17,5 @@ while True:
     elif int(huida) < yes:
         easygui.msgbox('小了')
         huida = int(easygui.enterbox('你猜', '请输入'))
+
+
