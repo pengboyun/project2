@@ -1,59 +1,22 @@
+import random,time
+class A():
+    def __init__(self,n,m):
+        self.n = n
+        self.m = m
+    def give(self):
+        return '价值'+self.m+'的'+self.n
 
-edward = ['Edward Gumby',42]
-j = ["j,Smith",50]
-database = [edward,j]
-database
-[['Edward Gumby',42],["j,Smith",50]]
-greeting = "Hello"
-greeting[0]
-'H'
-greeting[-1]
-'o'
-'Hello'[1]
-'e'
-fourth =raw_input("Year: ")
-Year: 2005
-four
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+n = input('What your name?')
+print('欢迎来到幸运大抽奖，'+n)
+a = [ A('computer','10000'),
+      A('金币','6666'),
+      A('空调','5555')]
+u = random.randint(0,2)
+time.sleep(2.50)
+if u == 0:
+    print('恭喜'+n+'获得一等奖🥇'+a[0].give())
+elif u == 1:
+    print('恭喜'+n+'获得二等奖🥈'+a[1].give())
+elif u == 2:
+    print('恭喜'+n+'获得三等奖🥉'+a[2].give())
 
