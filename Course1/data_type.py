@@ -17,3 +17,5 @@ print(type(1.11))
 print(True,False)
 print(1==1,1!=1)
 print(type(False))
+
+
