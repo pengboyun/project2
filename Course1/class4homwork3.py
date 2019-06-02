@@ -9,6 +9,10 @@ class multiplication(object):
                 y = y + str(i) + '*' + str(x) + '=' + str(i * x) + '   '
             print(y)
 
+
+
+
+
     def addition(self):
         x = 0
         for x in range(1,self.take_several_times):
