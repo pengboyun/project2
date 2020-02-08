@@ -1,9 +1,9 @@
 import easygui,random
 ci = 0
-num = random.randint(0,10)
-easygui.msgbox('请猜一个十到一的数','猜数游戏','好的')
+num = random.randint(0,20)
+easygui.msgbox('请猜一个二十到一的数','猜数游戏','好的')
 while True:
-    A = easygui.passwordbox('猜数游戏','猜数游戏','')
+    A = easygui.enterbox('猜数游戏','猜数游戏',image="123的图片.GIF"'')
     ci = ci + 1
     if int(A) == num:
         num = random.randint(0, 10)
