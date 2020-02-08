@@ -1,7 +1,10 @@
+#出题目给玩家计算
+#
+
 import random as r
 import easygui as e
 
-#随机符号
+#计算出正确的结果
 def jisuan(n1 , n2 , fu):
   result = 0
   if fu == '➕':
@@ -14,7 +17,7 @@ def jisuan(n1 , n2 , fu):
     result = n1 / n2
   return result
 
-#计算
+#随机输出符号加减乘除
 def fuhao():
   x = r.randint(0,3)
   fu = ""
@@ -55,7 +58,7 @@ while True:
   fu1 = fuhao()
   fu2 = fuhao()
 
-  #结算结果
+  #计算结果
   if (fu1 == '➕' or fu1 == '➖') and (fu2 == '✖️' or fu2 == '➗'):
     result = jisuan(n1,jisuan(n2,n3,fu2),fu1)
   else:
@@ -71,9 +74,11 @@ while True:
 
   player = e.enterbox(str(n1)+fu1+str(n2)+fu2+str(n3)+'='+str(result))
 
+#游戏结束，
   if player == None:
     print('你答对了' + str(g) + '道题')
     break
+#告诉玩家是否答对
   elif int(player) == int(result):
      e.msgbox('答对了')
      g = g + 1
